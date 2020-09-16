@@ -7,8 +7,10 @@
   "author": "Chad Ostrowski",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./",
-    "start": "parcel src/index.html"
+    "build:contract": "oz compile",
+    "build:frontend": "parcel build src/index.html --public-url ./",
+    "build": "npm run build:contract && npm run build:frontend",
+    "start": "npm run build:contract && parcel src/index.html"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^3.2.0",
