@@ -34,7 +34,7 @@ async function loadWeb3Modal () {
 
   window.erc20 = new Contract(
     process.env.ERC20_ADDRESS,
-    require('../../build/contracts/AbundanceToken.json').abi,
+    require(__dirname + '../../build/contracts/AbundanceToken.json').abi,
     window.ethSigner
   )
 
