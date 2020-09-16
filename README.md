@@ -13,4 +13,4 @@ Contributing
 1. Clone this repo and `cd` into its directory
 2. Install dependencies with `yarn install` or `npm install`
 3. Run frontend app in development mode with `yarn start` or `npm run start` (see other commands you can run in the `scripts` section of `package.json`)
-4. Modifying the contract? [OpenZeppelin's docs](https://docs.openzeppelin.com/contracts/3.x/) are your friend!
+4. Modifying the contract? [OpenZeppelin's docs](https://docs.openzeppelin.com/learn/) are your friend!
