@@ -1,3 +1,6 @@
 secrets.json
 .openzeppelin/.session
 build
+dist
+.cache
+yarn-error.log
