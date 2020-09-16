@@ -78,7 +78,7 @@ export const initDOMhandlers = () => {
 
     try {
       const minting = await window.erc20.mint(amount.value)
-      await minting.wait()
+      await minting.wait(2)
     } catch (e) {
       alert(
         'Something went wrong! ' +
