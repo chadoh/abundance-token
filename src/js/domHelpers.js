@@ -34,7 +34,6 @@ export const show = (selector, display) =>
 export const initDOMhandlers = () => {
   document.querySelector('[data-behavior=logout]').onclick = async function logout () {
     await window.web3Modal.clearCachedProvider()
-    window.nearConnection.signOut()
     setTimeout(() => window.location.reload())
   }
 

@@ -12,6 +12,25 @@
   <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
+  <nav style="position: absolute; right: 0.5em; top: 0.5em; z-index: 2">
+    <div id="menu" class="dropdown" aria-live="polite" style="font-size: 0.8em">
+      <button class="menu-icon" aria-controls="menu">
+        <div></div>
+        <span class="visually-hidden">menu</span>
+      </button>
+      <div class="right" style="width: 7em">
+        <div>
+          <a href="https://github.com/chadoh/abundance-token">View source</a>
+        </div>
+        <div data-behavior="signed-in" style="display: none; margin-top: 0.5em">
+          <button class="link" data-behavior="logout">
+            Sign out
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <div data-behavior="signed-out">
     <h1 class="title">Abundance Token</h1>
     <div style="margin: 0 auto; max-width: 25em">
@@ -29,19 +48,6 @@
   </div>
 
   <div data-behavior="signed-in" style="display: none">
-    <nav style="display: flex; align-items: stretch; position: absolute; right: 0.5em; top: 0.5em; z-index: 2">
-      <div id="menu" class="dropdown" aria-live="polite" style="font-size: 0.8em">
-        <button class="menu-icon" aria-controls="menu">
-          <div></div>
-          <span class="visually-hidden">menu</span>
-        </button>
-        <div class="right" style="width: 6em; text-align: center">
-          <button class="link" data-behavior="logout">
-            Sign out
-          </button>
-        </div>
-      </div>
-    </nav>
     <main style="margin: 0 auto; max-width: 25em">
       <h1 class="title">
         Your Balance:

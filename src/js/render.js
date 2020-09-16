@@ -15,5 +15,5 @@ export default async function render () {
   fill('erc20Balance').with(formatLargeNum(erc20Balance))
 
   hide('signed-out')
-  show('signed-in', 'flex')
+  show('signed-in')
 }
