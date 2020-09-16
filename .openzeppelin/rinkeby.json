@@ -1,0 +1,14 @@
+{
+  "contracts": {},
+  "solidityLibs": {},
+  "proxies": {
+    "abundance-token/AbundanceToken": [
+      {
+        "address": "0x56897F3751A8164de38e27aAe2c46142E6F09337",
+        "kind": "NonProxy",
+        "bytecodeHash": "222d7ab8727502e9ee860e69d57a9fd425e79b9167c7f9ca928b71e2e97fc4b6"
+      }
+    ]
+  },
+  "manifestVersion": "2.2"
+}
