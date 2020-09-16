@@ -2,6 +2,7 @@ import Web3Modal from 'web3modal'
 import WalletConnectProvider from '@walletconnect/web3-provider'
 import { Web3Provider } from '@ethersproject/providers'
 import { Contract } from '@ethersproject/contracts'
+import AbundanceToken from '../../build/contracts/AbundanceToken.json'
 
 import render from './render'
 
@@ -34,7 +35,7 @@ async function loadWeb3Modal () {
 
   window.erc20 = new Contract(
     process.env.ERC20_ADDRESS,
-    require(__dirname + '../../build/contracts/AbundanceToken.json').abi,
+    AbundanceToken.abi,
     window.ethSigner
   )
 
