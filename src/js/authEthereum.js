@@ -27,8 +27,7 @@ window.web3Modal = new Web3Modal({
 
 const button = document.querySelector('[data-behavior=authEthereum]')
 
-async function loadWeb3Modal () {
-  const provider = await window.web3Modal.connect()
+async function login (provider) {
   window.ethProvider = new Web3Provider(provider)
   window.ethSigner = window.ethProvider.getSigner()
   window.ethUserAddress = await window.ethSigner.getAddress()
@@ -39,7 +38,19 @@ async function loadWeb3Modal () {
     window.ethSigner
   )
 
+  window.erc20Symbol = await window.erc20.symbol()
+
   render()
+}
+
+async function loadWeb3Modal () {
+  const provider = await window.web3Modal.connect()
+
+  provider.on("accountsChanged", () => {
+    login(provider)
+  })
+
+  login(provider)
 }
 
 button.onclick = loadWeb3Modal

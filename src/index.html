@@ -45,9 +45,27 @@
     </button>
   </main>
 
-  <main data-behavior="signed-in" style="display: none">
+  <main data-behavior="eth-balance-zero" style="display: none; margin: 0 auto; max-width: 30em">
     <h1 class="title">
-      Your Balance:
+      Let's get you some ETH!
+    </h1>
+    <p>
+      You don't have any ETH on this account. To mint yourself
+      <span data-behavior="erc20Symbol">🤔</span> tokens, you'll need
+      to pay a small transaction fee with ETH.
+    </p>
+    <p>
+    Luckily, <span data-behavior="erc20Symbol">🤔</span> lives on
+    <a href="https://support.airswap.io/en/articles/2831385-what-is-rinkeby">Rinkeby</a>,
+    an Ethereum test network where ETH and other tokens have no real-world
+    value. You can go get yourself some test ETH at
+    <a href="https://faucet.rinkeby.io/">this handy faucet</a>.
+    </p>
+  </main>
+
+  <main data-behavior="eth-balance-positive" style="display: none">
+    <h1 class="title">
+      Your <span data-behavior="erc20Symbol">🤔</span> Balance:
       <span class="balance" data-behavior="erc20Balance">🤔</span>
     </h1>
     <form style="margin: 0 auto; max-width: 15em">
